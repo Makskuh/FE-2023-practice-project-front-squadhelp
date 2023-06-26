@@ -1,11 +1,13 @@
-import React from 'react'
-
-function LiElementsItem({array}) {
-  return (
-    array.map((values,index) => {
-      <li href={array.link} key={values.index}>{values.text}</li>
-    })
-  )
+import React from 'react';
+function LiElementsItem({ obj,array}) {
+  return array.map((item,index,arr) => {
+    const {LINK} = obj
+    return (
+      <li key={item}>
+        <a href={LINK}>{item}</a>
+      </li>
+    );
+  });
 }
 
 export default LiElementsItem;

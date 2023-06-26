@@ -8,6 +8,7 @@ import {
   clearUserStore,
   headerRequest,
 } from '../../actions/actionCreator';
+import LiElementsItem from './LiElementsItem';
 
 class Header extends React.Component {
   componentDidMount() {
@@ -89,7 +90,7 @@ class Header extends React.Component {
         <Link to="/login" style={{ textDecoration: 'none' }}>
           <button className={styles.btnLogin}>LOGIN</button>
         </Link>
-        <Link to="/registration" style={{ textDecoration: 'none' } }>
+        <Link to="/registration" style={{ textDecoration: 'none' }}>
           <button className={styles.btnLogin}>SIGN UP</button>
         </Link>
       </>
@@ -112,7 +113,9 @@ class Header extends React.Component {
         <div className={styles.loginSignnUpHeaders}>
           <div className={styles.numberContainer}>
             <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-            <a href="tel:" className={styles.tel}>+877-355-3585</a>
+            <a href="tel:" className={styles.tel}>
+              +877-355-3585
+            </a>
           </div>
           <div className={styles.userButtonsContainer}>
             {this.renderLoginButtons()}
@@ -136,30 +139,10 @@ class Header extends React.Component {
                     alt="menu"
                   />
                   <ul>
-                    <li>
-                      <a href="http://www.google.com">Beauty</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Consulting</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">E-Commerce</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Fashion & Clothing</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Finance</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Real Estate</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Tech</a>
-                    </li>
-                    <li className={styles.last}>
-                      <a href="http://www.google.com">More Categories</a>
-                    </li>
+                    <LiElementsItem
+                      obj={CONSTANTS.HEADER_LI_ITEM}
+                      array={CONSTANTS.HEADER_LI_ITEM.NAME_IDEAS}
+                    />
                   </ul>
                 </li>
                 <li>
@@ -169,27 +152,10 @@ class Header extends React.Component {
                     alt="menu"
                   />
                   <ul>
-                    <li>
-                      <a href="http://www.google.com">How It Works</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Agence Services</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Active Contests</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Winners</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Leaderboard</a>
-                    </li>
-                    <li className={styles.last}>
-                      <a href="http://www.google.com">Become A Creative</a>
-                    </li>
+                    <LiElementsItem
+                      obj={CONSTANTS.HEADER_LI_ITEM}
+                      array={CONSTANTS.HEADER_LI_ITEM.CONTESTS}
+                    />
                   </ul>
                 </li>
                 <li>
@@ -199,18 +165,10 @@ class Header extends React.Component {
                     alt="menu"
                   />
                   <ul>
-                    <li>
-                      <a href="http://www.google.com">Names</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Taglines</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Logos</a>
-                    </li>
-                    <li className={styles.last}>
-                      <a href="http://www.google.com">Testimonials</a>
-                    </li>
+                    <LiElementsItem
+                      obj={CONSTANTS.HEADER_LI_ITEM}
+                      array={CONSTANTS.HEADER_LI_ITEM.OUR_WORK}
+                    />
                   </ul>
                 </li>
                 <li>
@@ -220,24 +178,10 @@ class Header extends React.Component {
                     alt="menu"
                   />
                   <ul>
-                    <li>
-                      <a href="http://www.google.com">Popular Names</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Short Names</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Intriguing Names</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Names By Categories</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Visual Name Search</a>
-                    </li>
-                    <li className={styles.last}>
-                      <a href="http://www.google.com">Sell Your Domains</a>
-                    </li>
+                    <LiElementsItem
+                      obj={CONSTANTS.HEADER_LI_ITEM}
+                      array={CONSTANTS.HEADER_LI_ITEM.NAMES_FOR_SALE}
+                    />
                   </ul>
                 </li>
                 <li>
@@ -247,20 +191,10 @@ class Header extends React.Component {
                     alt="menu"
                   />
                   <ul>
-                    <li>
-                      <a href="http://www.google.com">Ultimate Naming Guard</a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">
-                        Poetic Devices In Bussines Naming
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://www.google.com">Crowed Bar Theory</a>
-                    </li>
-                    <li className={styles.last}>
-                      <a href="http://www.google.com">All Articles</a>
-                    </li>
+                    <LiElementsItem
+                      obj={CONSTANTS.HEADER_LI_ITEM}
+                      array={CONSTANTS.HEADER_LI_ITEM.BLOG}
+                    />
                   </ul>
                 </li>
               </ul>

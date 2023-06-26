@@ -78,7 +78,7 @@ export default {
     }
   ],
   HEADER_LI_ITEM : { 
-    text:['Beauty',
+    NAME_IDEAS:['Beauty',
       'Consulting',
       'E-Commerce',
       'Fashion & Clothing',
@@ -86,6 +86,30 @@ export default {
       'Real Estate',
       'Tech',
       'More Categories',],
-      link: 'http://www.google.com'
+      OUR_WORK: [                  
+      'Names',
+      'Taglines',
+      'Logos',
+      'Testimonials'],
+      CONTESTS: ['How It Works',,
+        'Pricing',
+        'Agence Services',
+        'Active Contests',
+        'Winners',
+        'Leaderboard',
+        'Become A Creative'
+                            ],
+      NAMES_FOR_SALE:[ 'Popular Names',
+      'Short Names',
+      'Intriguing Names',
+      'Names By Categories',
+      'Visual Name Search',
+      'Sell Your Domains'],
+      BLOG:[                     
+        'Ultimate Naming Guard',
+        'Poetic Devices In Bussines Naming',
+        'Crowed Bar Theory',
+        'All Articles'],
+      LINK: 'http://www.google.com'
   }
 }
