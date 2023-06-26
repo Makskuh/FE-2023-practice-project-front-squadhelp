@@ -17,7 +17,7 @@ const LoginPage = (props) => (
             to="/registration"
             style={{ textDecoration: 'none' }}
           >
-            <span>Signup</span>
+            <button className={styles.button}>Signup</button>
           </Link>
         </div>
       </div>

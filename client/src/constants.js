@@ -76,5 +76,16 @@ export default {
       title: 'LEGAL',
       items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy']
     }
-  ]
+  ],
+  HEADER_LI_ITEM : { 
+    text:['Beauty',
+      'Consulting',
+      'E-Commerce',
+      'Fashion & Clothing',
+      'Finance',
+      'Real Estate',
+      'Tech',
+      'More Categories',],
+      link: 'http://www.google.com'
+  }
 }
