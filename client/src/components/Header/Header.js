@@ -133,6 +133,14 @@ class Header extends React.Component {
             <div className={styles.nav}>
               <ul>
                 <li>
+                  <Link
+                    to="/pricing"
+                    style={{textDecoration: 'none' , color: '#718888' }}
+                  >
+                    Pricing
+                  </Link>
+                </li>
+                <li>
                   <span>Name Ideas</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}

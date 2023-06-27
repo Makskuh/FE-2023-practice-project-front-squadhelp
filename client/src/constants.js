@@ -1,6 +1,6 @@
-const env = process.env.NODE_ENV || 'development'
-const serverIP = 'localhost'
-const serverPort = 5000
+const env = process.env.NODE_ENV || 'development';
+const serverIP = 'localhost';
+const serverPort = 5000;
 export default {
   CUSTOMER: 'customer',
   CREATOR: 'creator',
@@ -39,12 +39,12 @@ export default {
     'a Business',
     'an App',
     'a Product',
-    'a Startup'
+    'a Startup',
   ],
   FooterItems: [
     {
       title: 'SQUADHELP',
-      items: ['About', 'Contact', 'How It Works?', 'Testimonials', 'Our Work']
+      items: ['About', 'Contact', 'How It Works?', 'Testimonials', 'Our Work'],
     },
     {
       title: 'RESOURCES',
@@ -56,8 +56,8 @@ export default {
         'Blog',
         'Download eBook',
         'Pricing',
-        'Help & FAQs'
-      ]
+        'Help & FAQs',
+      ],
     },
     {
       title: 'OUR SERVICES',
@@ -69,47 +69,118 @@ export default {
         'Creative Owned Names For Sale',
         'Audience Testing',
         'Trademark Research & Filling',
-        'Managed Agency Service'
-      ]
+        'Managed Agency Service',
+      ],
     },
     {
       title: 'LEGAL',
-      items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy']
-    }
+      items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
+    },
   ],
-  HEADER_LI_ITEM : { 
-    NAME_IDEAS:['Beauty',
+  HEADER_LI_ITEM: {
+    NAME_IDEAS: [
+      'Beauty',
       'Consulting',
       'E-Commerce',
       'Fashion & Clothing',
       'Finance',
       'Real Estate',
       'Tech',
-      'More Categories',],
-      OUR_WORK: [                  
-      'Names',
-      'Taglines',
-      'Logos',
-      'Testimonials'],
-      CONTESTS: ['How It Works',,
-        'Pricing',
-        'Agence Services',
-        'Active Contests',
-        'Winners',
-        'Leaderboard',
-        'Become A Creative'
-                            ],
-      NAMES_FOR_SALE:[ 'Popular Names',
+      'More Categories',
+    ],
+    OUR_WORK: ['Names', 'Taglines', 'Logos', 'Testimonials'],
+    CONTESTS: [
+      'How It Works',
+      ,
+      'Pricing',
+      'Agence Services',
+      'Active Contests',
+      'Winners',
+      'Leaderboard',
+      'Become A Creative',
+    ],
+    NAMES_FOR_SALE: [
+      'Popular Names',
       'Short Names',
       'Intriguing Names',
       'Names By Categories',
       'Visual Name Search',
-      'Sell Your Domains'],
-      BLOG:[                     
-        'Ultimate Naming Guard',
-        'Poetic Devices In Bussines Naming',
-        'Crowed Bar Theory',
-        'All Articles'],
-      LINK: 'http://www.google.com'
-  }
-}
+      'Sell Your Domains',
+    ],
+    BLOG: [
+      'Ultimate Naming Guard',
+      'Poetic Devices In Bussines Naming',
+      'Crowed Bar Theory',
+      'All Articles',
+    ],
+    LINK: 'http://www.google.com',
+  },
+  SELECT_PRICING: [
+    'Name',
+    'Logo',
+    'Tegline',
+    'Name and Logo',
+    'Name and Tagline',
+    'Name and Tagline, Logo',
+    'Name,Logo and Bussines',
+    'Logo and Bussines card',
+    'Logo and Tagline',
+    'Bussines card',
+    'Stationery',
+    'Product Feedback and Research',
+  ],
+  PRICING_BRONZE: {
+    MAIN: ['Bronze', 'Branding on a budget', 299],
+    LI_EL: [
+      'Prize to Winner - $135 (Included)',
+      'Validation Services & Upgrades ($39 value)',
+      'Matching .com URL',
+      'Expected 300+ Entries',
+    ],
+  },
+  PRICING_GOLD: {
+    MAIN: ['Gold', 'Increase participation and basic brand validation', 449],
+    LI_EL: [
+      'Prize to Winner - $200 (Included)',
+      'Validation Services & Upgrades ($305 value)',
+      'Matching .com URL',
+      ' Instant Trademark Check (One Database)',
+      'NDA and More Privacy',
+      'Project Promotion (Basic)',
+      ' Comprehensive Trademark Research',
+      'Expected 600+ Entries',
+      'Partial Refund Option',
+    ],
+  },
+  PRICING_PLATINUM: {
+    MAIN: [
+      'Platinum',
+      'Work with top-level creatives, plus agency-style brand validation',
+      749,
+    ],
+    LI_EL: [
+      'Prize to Winner - $300 (Included)',
+      'Validation Services & Upgrades ($979 value)',
+      'Audience Testing (Up to 6 Names) View Sample Report',
+      'Comprehensive Trademark Research (3 Names)',
+      'Tier A Creatives',
+      'Matching .com URL',
+      ' Instant Trademark Check (4 Databases)',
+      'NDA and More Privacy',
+      'Enhanced Project Promotion',
+      ' Team Collaboration Tools',
+      'Expected 1000+ Entries',
+      'Partial Refund Option',
+    ],
+  },
+  PRICING_MANAGED: {
+    MAIN: [
+      'Managed',
+      'A full agency experience without the agency price tag',
+      1499,
+    ],
+    LI_EL: [
+      'Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you`ll receive an enhanced branding experience to closeout your branding project.Learn More about Managed Contest Service',
+    ],
+  },
+};

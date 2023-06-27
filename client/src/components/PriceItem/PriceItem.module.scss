@@ -1,0 +1,41 @@
+.mainWrapper {
+  border: 10px solid #eee;
+  padding: 16px;
+  margin-bottom: 15px;
+  display: block;
+  min-height: 215px;
+  width: 100%;
+  background-color: #fff;
+  border-color: #e0b48d;
+  opacity: 1;
+}
+.divBox {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.title {
+  font-size: 33px;
+  margin-top: 0;
+  font-weight: 700;
+  color: #666;
+}
+.underTitle {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 75px;
+  margin: 0;
+}
+.cost {
+  float: right;
+    font-size: 28px;
+    font-weight: 600;
+    color: #555;
+}
+.liItem {
+  font-size: 15px;
+    font-weight: 500;
+    padding: 13px 0;
+    border-bottom: 2px solid #ddd;
+}
