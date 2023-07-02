@@ -38,4 +38,21 @@
     font-weight: 500;
     padding: 13px 0;
     border-bottom: 2px solid #ddd;
+    line-height: 1.3;
+}
+.liSubItem {
+  line-height: 1.4;
+  list-style: inside;
+  font-size: 14px;
+  font-weight: 400;
+    padding: 5px 0 0 10px;
+    ;
+}
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #e0b48d;
+    background: #e0b48d;
+    color: #fff
+}  .btn:hover {
+  background: rgb(146, 167, 168);
 }

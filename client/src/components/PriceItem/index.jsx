@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './PriceItem.module.scss';
+import PriceLi from './PriceLi';
+import { isArray } from 'lodash';
+
 let i = 0;
+
 function PriceItem({ priceObj }) {
-  const { MAIN, LI_EL } = priceObj;
-  const liItem = LI_EL.map((value) => {
-    return <li key={i++} className={styles.liItem}>{value}</li>;
+  const {
+    MAIN: [title, textunder, cost],
+    LI_EL,
+  } = priceObj;
+
+  const liItems = LI_EL.map((value) => {
+    if (isArray(value)) {
+      return value.map((subLi) => (
+        <PriceLi key={i++} value={subLi} stylesLi={styles.liSubItem} />
+      ));
+    }
+    return <PriceLi key={i++} value={value} stylesLi={styles.liItem} />;
   });
+
   return (
     <div className={styles.divBox}>
       <div className={styles.mainWrapper}>
-        <h2 className={styles.title}>{MAIN[0]}</h2>
-        <p className={styles.underTitle}>{MAIN[1]}</p>
-        <span className={styles.cost}>$US{MAIN[2]}</span>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.underTitle}>{textunder}</p>
+        <span className={styles.cost}>$US{cost}</span>
       </div>
-      <ul>{liItem}</ul>
-      <button>START</button>
+      <ul>{liItems}</ul>
+      <button className={styles.btn}>START</button>
     </div>
   );
 }

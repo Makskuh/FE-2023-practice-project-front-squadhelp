@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from './PriceLi.module.scss'
-function PriceLi(props) {
+
+function PriceLi({value,stylesLi}) {
   return (
-    <li  className={styles.liItem}>{value}</li>
+    <li className={stylesLi} >{value}</li>
   )
 }
-
 export default PriceLi;
